@@ -34,5 +34,5 @@ or
 /tmp/buggy-vue-lib/example $ yarn build
 ```
 
-The first and sometimes second run will cause an error and fail. The project will compile and run successfully after and running the command again a few times. In case of `yarn serve`, the failed build has to be exited with ^C before trying again. 
+The first and sometimes second run will cause an error and fail. The project will compile and run successfully after a few retries. In case of `yarn serve`, the failed build has to be exited with ^C before trying again. 
 
