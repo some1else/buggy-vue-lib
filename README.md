@@ -22,11 +22,17 @@ Creates `dist/buggyvuelib.umd.js`
 /tmp/buggy-vue-lib $ cd example && yarn install
 ```
 
-## 4. Try to serve the example project until success
+## 4. Try to serve or build the example project until success
 
 ```
 /tmp/buggy-vue-lib/example $ yarn serve
 ```
 
-The first and sometimes second run will cause an error and fail to build. The project will compile and run successfully after killing (^C) and running the `yarn serve` command again a few times. 
+or 
+
+```
+/tmp/buggy-vue-lib/example $ yarn build
+```
+
+The first and sometimes second run will cause an error and fail. The project will compile and run successfully after and running the command again a few times. In case of `yarn serve`, the failed build has to be exited with ^C before trying again. 
 
