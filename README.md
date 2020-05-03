@@ -1,6 +1,10 @@
+# Fixed
+
+The issue is caused due to the library being linked into the example project for development purposes. The manual suggests [disabling resolve.symlinks](https://cli.vuejs.org/guide/troubleshooting.html#symbolic-links-in-node-modules), which fixed the issue. [See commit](https://github.com/some1else/buggy-vue-lib/commit/a65f9ca2f2c0b3e69158f90aa35d381721445bf6)
+
 # buggy-vue-lib
 
-Demo of an issue when using a built Vue library
+Reproduction of an issue when using a built Vue library
 
 ## 1. Project setup
 
