@@ -2,9 +2,10 @@
   "name": "buggy-vue-lib",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/buggyvuelib.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "NODE_ENV=production vue-cli-service build --target lib --config vue.config.js --name buggyvuelib ./src/package.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
