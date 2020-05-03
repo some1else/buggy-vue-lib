@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <special-button label="error" />
   </div>
 </template>
 
