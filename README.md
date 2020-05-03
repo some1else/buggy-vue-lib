@@ -1,24 +1,32 @@
 # buggy-vue-lib
 
-## Project setup
+Demo of an issue when using a built Vue library
+
+## 1. Project setup
+
 ```
-yarn install
+/tmp/buggy-vue-lib $ yarn install
 ```
 
-### Compiles and hot-reloads for development
+## 2. Compile lib for production
+
 ```
-yarn serve
+/tmp/buggy-vue-lib $ yarn build
 ```
 
-### Compiles and minifies for production
+Creates `dist/buggyvuelib.umd.js`
+
+## 3. Go to example project and install dependencies
+
 ```
-yarn build
+/tmp/buggy-vue-lib $ cd example && yarn install
 ```
 
-### Lints and fixes files
+## 4. Try to serve the example project until success
+
 ```
-yarn lint
+/tmp/buggy-vue-lib/example $ yarn serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The first and sometimes second run will cause an error and fail to build. The project will compile and run successfully after killing (^C) and running the `yarn serve` command again a few times. 
+
